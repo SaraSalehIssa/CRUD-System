@@ -19,61 +19,50 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-capitalize"><span class="text-uppercase">curd</span> system</h1>
+    <div class="add-course">
+        <div class="container">
+            <h1>CRUD System</h1>
+            <form action="">
+                <div class="mb-3">
+                    <label for="">course name <span class="text-danger">*</span> </label>
+                    <input class="inputs form-control" type="text" placeholder="cource name" id="courseName">
+                </div>
+                <label for="">course category</label>
+                <input class="inputs form-control" type="text" placeholder="cource category" id="courseCategory">
+                <label for="">course price</label>
+                <input class="inputs form-control" type="number" placeholder="cource price" id="coursePrice">
+                <label for="">course description</label>
+                <textarea class="inputs form-control" placeholder="course description"
+                    id="courseDescription"></textarea>
+                <label for="">course capacity</label>
+                <input class="inputs form-control" type="number" placeholder="cource capacity" id="courseCapacity">
 
-        <form>
-            <div class="my-1">
-                <label>course name</label>
-                <input class="w-100" type="text">
-            </div>
+                <input type="submit" value="Add Course" class="btn btn-outline-secondary mt-3" disabled id="click" />
+                <button class="btn btn-outline-secondary mt-3" type="reset" id="resetbtn">clear</button>
+            </form>
+        </div>
+        <div class="container">
+            <input type="search" placeholder="search..." id="search" class="form-control my-3">
 
-            <div class="my-1">
-                <label>course category</label>
-                <input class="w-100" type="text">
-            </div>
+            <table class="table table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>name</th>
+                        <th>category</th>
+                        <th>price</th>
+                        <th>description</th>
+                        <th>capacity</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <button id="deleteBtn" class="btn btn-outline-danger text-center my-3">delete all</button>
+                <tbody id="data">
 
-            <div class="my-1">
-                <label>course price</label>
-                <input class="w-100" type="number">
-            </div>
-
-            <div class="my-1">
-                <label>course description</label>
-                <input class="w-100" type="text">
-            </div>
-
-            <div class="my-1">
-                <label>course capacity</label>
-                <input class="w-100" type="number">
-            </div>
-
-            <div class="my-3">
-                <button class="bg-transparent border-1 rounded-1">add course</button>
-                <button class="bg-transparent border-1 rounded-1">clear</button>
-            </div>
-
-            <div>
-                <input class="w-100 px-2" type="text" placeholder="search...">
-            </div>
-
-            <div class="my-3">
-                <button class="text-danger bg-transparent border-danger border-1 rounded-1">delete all</button>
-            </div>
-
-            <div class="my-3">
-                <table class="w-100 border-bottom">
-                    <th>#</th>
-                    <th>name</th>
-                    <th>category</th>
-                    <th>price</th>
-                    <th>description</th>
-                    <th>capacity</th>
-                    <th>delete</th>
-                    <th>update</th>
-                </table>
-            </div>
-        </form>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- custom JS -->
