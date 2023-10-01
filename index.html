@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap 5.3v -->
+    <link rel="stylesheet" href="assets/css//bootstrap.min.css">
+
+    <!-- fontawesome 6.4v -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./assets/img/icon.jpg">
+    <title>CURD System</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-capitalize"><span class="text-uppercase">curd</span> system</h1>
+
+        <form>
+            <div class="my-1">
+                <label>course name</label>
+                <input class="w-100" type="text">
+            </div>
+
+            <div class="my-1">
+                <label>course category</label>
+                <input class="w-100" type="text">
+            </div>
+
+            <div class="my-1">
+                <label>course price</label>
+                <input class="w-100" type="number">
+            </div>
+
+            <div class="my-1">
+                <label>course description</label>
+                <input class="w-100" type="text">
+            </div>
+
+            <div class="my-1">
+                <label>course capacity</label>
+                <input class="w-100" type="number">
+            </div>
+
+            <div class="my-3">
+                <button class="bg-transparent border-1 rounded-1">add course</button>
+                <button class="bg-transparent border-1 rounded-1">clear</button>
+            </div>
+
+            <div>
+                <input class="w-100 px-2" type="text" placeholder="search...">
+            </div>
+
+            <div class="my-3">
+                <button class="text-danger bg-transparent border-danger border-1 rounded-1">delete all</button>
+            </div>
+
+            <div class="my-3">
+                <table class="w-100 border-bottom">
+                    <th>#</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>capacity</th>
+                    <th>delete</th>
+                    <th>update</th>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <!-- custom JS -->
+    <script src="main.js"></script>
+
+    <!-- bootstrap 5.3v -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
